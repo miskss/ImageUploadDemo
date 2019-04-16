@@ -39,7 +39,7 @@ public class ImageTest {
             }
             long copy = Files.copy(inputStream, directory.resolve(name));
 
-            return "上传成功，大小：" + copy+";url访问路径为："+UPLOAD_PATH+name;
+            return "上传成功，大小：" + copy+";url访问路径为："+UPLOAD_PATH+"/"+name;
 
         } catch (Exception e) {
             log.error(e.getMessage(), e);
